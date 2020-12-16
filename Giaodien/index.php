@@ -122,14 +122,7 @@
                                                 <span class="amount"></span>
                                             </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-                                                    
-                                                    <input name="quantity[]" type="number" size="4" class="input-text qty text" title="Qty" value="" min="0" step="1">
-                                                    <input type="hidden" name="id[]" value="">
-                                                    
-                                                </div>
-                                            </td>
+                                            
 
                                             <td class="product-subtotal">
                                                 <span class="amount"></span>
@@ -152,14 +145,7 @@
                                                 <span class="amount"></span>
                                             </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-                                                    
-                                                    <input name="quantity[]" type="number" size="4" class="input-text qty text" title="Qty" value="" min="0" step="1">
-                                                    <input type="hidden" name="id[]" value="">
-                                                    
-                                                </div>
-                                            </td>
+                                            
 
                                             <td class="product-subtotal">
                                                 <span class="amount"></span>
@@ -174,7 +160,7 @@
                                             </div>
                                             <input type="submit" value="Cập nhật giỏ hàng" name="update_cart" class="button">
                                             
-                                            <a  class="button"  >Đặt hàng</a>
+                                            <a  class="button" href="http://localhost/Giaodien/order.php" >Đặt hàng</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -213,8 +199,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+  
 
 
 

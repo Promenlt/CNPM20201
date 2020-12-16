@@ -203,11 +203,10 @@
                                     </ul>
 
                                     <div class="form-row place-order">
-                                        <input type="submit" name="order" data-value="Place order" value="Đặt Hàng" id="place_order"  class="button alt">
+                                        <a  class="button" href="http://localhost/Giaodien/successOrder.php" >Đặt hàng</a>
                                     </div>
 
-                                    <div class="clear"></div>
-
+                                  
                                 </div>
                             </div>
                         </form>
