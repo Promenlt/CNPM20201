@@ -83,8 +83,12 @@
         </div>
     </header>
     <main>
-        <div>
-            <img src="" align="middle">
+        <div class="image">
+            <img src="img/tick.png" >
+        </div>
+        <div class="report">
+            <p>Cảm ơn bạn đã mua sản phẩm, đơn hàng của bạn đã được hệ thống ghi nhận!</p>
+            <a style="color:#5a88ca" href="http://localhost/Giaodien/index.php"><b><u>Quay lại trang chủ!</u></b></a>
         </div>
     </main>
     <footer>

@@ -75,7 +75,7 @@
                         <a href="#"><b>sản phẩm</b></a>
                         <a href="#"><b>tin tức</b></a>
                         <a href="#"><b>liên hệ</b></a>
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        <a href="http://localhost/Giaodien/index.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     </nav>
                 </div>
 
@@ -85,88 +85,76 @@
 
     <main class="content-area">
         <div class="product-area">
-            <div class="product-title">Giỏ hàng của bạn
+            <div class="product-title">Giỏ hàng của bạn(1 sản phẩm)<!-- dien so luong san pham o day -->
                 <hr>
-            </div>           
+            </div>
+            
             <div class="col-md-8 ">
                 <div class="product-content-right ">
                     <div class="woocommerce ">
-                        <form method="post" action="">
-                            <table cellspacing="0 " class="shop_table cart">
+                        <form method="POST" action="index.php?action=submit">
+                            <div class="removecart">
+                                <a style="color:#5a88ca" href="index.php?action=deleteAll"><b><u>Xóa tất cả</u></b></a><!-- xóa toàn bộ sản phẩm ở đây, action case = deleteAll -->
+                            </div>
+                            <table cellspacing="0" class="shop_table cart">
                                 <thead>
                                     <tr>
-                                        <th class="product-remove"></th>
+                                        <th class="product-remove">Xóa</th>
                                         <th class="product-thumbnail ">Hình ảnh</th>
                                         <th class="product-name ">Tên Sản phẩm </th>
                                         <th class="product-price ">Đơn giá</th>
                                         <th class="product-quantity ">Số lượng</th>
-                                        <th class="product-subtotal ">Giá</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
+                                    <!-- them vong lap de dem so san pham o day -->
                                         <tr class="cart_item ">
                                             <td class="product-remove">
-                                                <a title="Xóa sản phẩm này" class="remove" >×</a>
+                                                <a title="Xóa sản phẩm này" class="remove" href="index.php?action=delete&id=" ><i class="fa fa-trash" aria-hidden="true"></i></a><!-- action name = delete, thêm id sản phẩm vào id -->
                                             </td>
 
                                             <td class="product-thumbnail">
-                                                <a ><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src=""></a>
+                                                <a ><img alt="poster_1_up" class="shop_thumbnail" src=""></a>
                                             </td>
 
                                             <td class="product-name">
-                                                <a ></a>
+                                                <a >Tam quốc diễn nghĩa</a>
                                             </td>
 
                                             <td class="product-price ">
-                                                <span class="amount"></span>
+                                                <span class="amount">179.000.000 VNĐ</span>
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="quantity buttons_added">
+                                                    
+                                                    <input name="quantity[]" type="number" size="4" class="input-text qty text" title="Qty" value="1" min="1" step="1"><!-- thêm id sản phẩm vào trong quantity[] -->
+                                                    <input type="hidden" name="id[]" value="1">
+                                                    
+                                                </div>
                                             </td>
 
                                             
-
-                                            <td class="product-subtotal">
-                                                <span class="amount"></span>
-                                            </td>
                                         </tr>
-                                    <tr class="cart_item ">
-                                            <td class="product-remove">
-                                                <a title="Xóa sản phẩm này" class="remove" >×</a>
-                                            </td>
-
-                                            <td class="product-thumbnail">
-                                                <a ><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src=""></a>
-                                            </td>
-
-                                            <td class="product-name">
-                                                <a ></a>
-                                            </td>
-
-                                            <td class="product-price ">
-                                                <span class="amount"></span>
-                                            </td>
-
-                                            
-
-                                            <td class="product-subtotal">
-                                                <span class="amount"></span>
-                                            </td>
-                                        </tr>   
+                                        
                                     <tr>
-                                        <td class="actions" colspan="6">
+                                        <td class="actions" colspan="5">
                                             <div class="coupon">
                                                 <label for="coupon_code">Khuyến mãi:</label>
                                                 <input type="text" placeholder="Coupon code " value="" id="coupon_code" class="input-text" name="coupon_code">
-                                                <input type="submit" value="Xác nhận" name="apply_coupon" class="button">
+                                                <input type="submit" value="Áp dụng" name="apply_coupon" class="button">
                                             </div>
-                                            <input type="submit" value="Cập nhật giỏ hàng" name="update_cart" class="button">
-                                            
-                                            <a  class="button" href="http://localhost/Giaodien/order.php" >Đặt hàng</a>
+                                            <div class="order">
+                                                <input type="submit" value="Cập nhật giỏ hàng" name="apply_cart" class="button">
+                                                <a  class="button" href="http://localhost/Giaodien/order.php" >Thanh toán</a>    
+                                            </div>                                          
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </form>
-
+                        <!-- Thực hiện tính toán giá trị hóa đơn ở đây -->
                         <div class="cart-collaterals ">                       
                             <div class="cart_totals">
                                 <h2>Tổng thanh toán</h2>
@@ -198,13 +186,8 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-  
-
-
-
-        
-        
     </main>
 
     <footer>

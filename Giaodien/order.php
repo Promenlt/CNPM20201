@@ -75,7 +75,7 @@
                         <a href="#"><b>sản phẩm</b></a>
                         <a href="#"><b>tin tức</b></a>
                         <a href="#"><b>liên hệ</b></a>
-                        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        <a href="http://localhost/Giaodien/index.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                     </nav>
                 </div>
 
@@ -206,7 +206,8 @@
                                         <a  class="button" href="http://localhost/Giaodien/successOrder.php" >Đặt hàng</a>
                                     </div>
 
-                                  
+                                    <div class="clear"></div>
+
                                 </div>
                             </div>
                         </form>

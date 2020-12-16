@@ -2,5 +2,12 @@
     "elements": {
         "h3": {}
     },
-    "attributes": {}
+    "attributes": {
+        "size": {
+            "context": "input"
+        },
+        "href": {
+            "context": "input"
+        }
+    }
 }
